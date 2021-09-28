@@ -1,9 +1,9 @@
-package com.example.swiggyclone
+package activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.swiggyclone.R
 import com.example.swiggyclone.fragments.AccountFragment
 import com.example.swiggyclone.fragments.CartFragment
 import com.example.swiggyclone.fragments.SearchFragment
