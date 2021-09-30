@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SwiggyClone">
         <activity
+            android:name="activities.Home"
+            android:exported="true" />
+        <activity
+            android:name="activities.Verify"
+            android:exported="true" />
+        <activity
+            android:name="activities.Number"
+            android:exported="true" />
+        <activity
             android:name="activities.MainActivity"
             android:exported="true" />
         <activity

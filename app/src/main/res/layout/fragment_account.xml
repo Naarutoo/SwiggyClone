@@ -46,7 +46,7 @@
         android:layout_marginBottom="15dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:padding="15dp"
-        android:text="LOGIN" />
+        android:text="@string/login" />
     <TextView
         android:id="@+id/text3"
         android:layout_width="wrap_content"
@@ -72,14 +72,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/view1"
-        android:text="Offers"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="18dp"
         android:layout_marginVertical="15dp"
         android:layout_marginLeft="15dp"
         android:drawableLeft="@drawable/offer"
-        android:drawablePadding="10dp"/>
+        android:drawablePadding="10dp"
+        android:text="Offers"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
@@ -87,21 +87,21 @@
         android:layout_below="@id/tvOffers"
         android:background="@android:color/darker_gray"
         android:layout_marginHorizontal="15dp"/>
+
     <TextView
         android:id="@+id/tvFeedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-      android:layout_below="@id/view2"
+        android:layout_below="@id/view2"
+        android:layout_marginVertical="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:drawableLeft="@drawable/feedback"
+        android:drawablePadding="10dp"
         android:text="Send Feedback"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="18dp"
-        android:layout_marginVertical="15dp"
-       android:layout_margin="15dp"
-        android:drawableLeft="@drawable/feedback"
-        android:drawablePadding="10dp"/>
-
-
-
-
+        android:textStyle="bold" />
 </RelativeLayout>
