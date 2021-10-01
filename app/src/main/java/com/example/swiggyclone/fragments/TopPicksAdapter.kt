@@ -1,6 +1,5 @@
 package com.example.swiggyclone.fragments
 
-import Model.ResponseDTO
 import Model.RestaurantsDTO
 import android.view.LayoutInflater
 import android.view.ViewGroup
