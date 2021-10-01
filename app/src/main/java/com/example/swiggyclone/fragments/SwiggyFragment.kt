@@ -22,8 +22,8 @@ class SwiggyFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-   //     buildPopularList()
-     //   setPopularRecyclerview()
+        buildPopularList()
+        setPopularRecyclerview()
          callApi()
 
     }
@@ -54,6 +54,7 @@ class SwiggyFragment : Fragment() {
 
     private fun setTopPicksRestaurant() {
         var linearLayoutManager = LinearLayoutManager(context)
+        linearLayoutManager.orientation = LinearLayoutManager.HORIZONTAL
         rvTopPicks.layoutManager = linearLayoutManager
         var topPicksAdapter = TopPicksAdapter(restaurantDTOList)
         rvTopPicks.adapter = topPicksAdapter
@@ -61,14 +62,22 @@ class SwiggyFragment : Fragment() {
 
 
     private fun setPopularRecyclerview() {
-        var linearLayoutManager = LinearLayoutManager(context)
-        rvPopular.layoutManager = linearLayoutManager
+        var linearLayoutManager2 = LinearLayoutManager(context)
+        linearLayoutManager2.orientation = LinearLayoutManager.HORIZONTAL
+        rvPopular.layoutManager = linearLayoutManager2
         var popularAdapter = PopularAdapter(list)
         rvPopular.adapter = popularAdapter
     }
 
     private fun buildPopularList() {
-        TODO("Not yet implemented")
+        list.add(PopularModel(R.drawable.kfc,"KFC"))
+        list.add(PopularModel(R.drawable.subway,"Subway"))
+        list.add(PopularModel(R.drawable.pizzahut,"Pizza Hut"))
+        list.add(PopularModel(R.drawable.burger_king,"Burger King"))
+        list.add(PopularModel(R.drawable.starbucks,"Starbucks"))
+        list.add(PopularModel(R.drawable.dominoz,"Dominoz"))
+        list.add(PopularModel(R.drawable.rohit,"Rohit wadewale"))
+
     }
 
     private fun buildList() {

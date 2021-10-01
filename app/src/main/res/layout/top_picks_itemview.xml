@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
         <ImageView
             android:id="@+id/ivTopPickImage"
-            android:layout_width="match_parent"
-            android:layout_height="650dp"
-            android:src="@drawable/cake"/>
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cake"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="8dp"
+            />
 
         <TextView
             android:id="@+id/tvTopPickName"
@@ -18,7 +19,7 @@
             android:layout_height="wrap_content"
             android:text="demo text"
             android:layout_gravity="center"
-            android:textSize="25dp"
+            android:textSize="10dp"
             android:textColor="@color/black"/>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

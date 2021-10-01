@@ -12,6 +12,14 @@
         <entry key="..\:/Android Studio/SwiggyClone/app/src/main/res/layout/fragment_search.xml" value="0.1" />
         <entry key="..\:/Android Studio/SwiggyClone/app/src/main/res/layout/fragment_swiggy.xml" value="0.1" />
         <entry key="..\:/Android Studio/SwiggyClone/app/src/main/res/menu/menu.xml" value="0.2988679352838745" />
+        <entry key="..\:/SwiggyC/app/src/main/res/drawable/search.xml" value="0.18541666666666667" />
+        <entry key="..\:/SwiggyC/app/src/main/res/drawable/searchview_background.xml" value="0.18541666666666667" />
+        <entry key="..\:/SwiggyC/app/src/main/res/layout/activity_restaurant_detail.xml" value="0.2264151024877837" />
+        <entry key="..\:/SwiggyC/app/src/main/res/layout/fragment_search.xml" value="0.1" />
+        <entry key="..\:/SwiggyC/app/src/main/res/layout/fragment_swiggy.xml" value="0.16927083333333334" />
+        <entry key="..\:/SwiggyC/app/src/main/res/layout/popular_itemview.xml" value="0.16927083333333334" />
+        <entry key="..\:/SwiggyC/app/src/main/res/layout/restaurant_itemview.xml" value="0.27920962199312716" />
+        <entry key="..\:/SwiggyC/app/src/main/res/layout/top_picks_itemview.xml" value="0.16301887379120425" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/drawable/backgroundbox.xml" value="0.5964285714285714" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/drawable/backgroundbutton.xml" value="0.15462962962962962" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/drawable/edittext_bg.xml" value="0.15462962962962962" />
