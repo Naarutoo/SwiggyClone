@@ -1,60 +1,77 @@
 package com.example.swiggyclone.fragments
 
+import Model.ResponseDTO
+import Model.RestaurantsDTO
+import Retrofit.ApiService
+import Retrofit.Network
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.swiggyclone.R
+import kotlinx.android.synthetic.main.fragment_swiggy.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [SwiggyFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class SwiggyFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var list: ArrayList<PopularModel> = ArrayList()
+    private var restaurantDTOList=listOf<RestaurantsDTO>()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+   //     buildPopularList()
+     //   setPopularRecyclerview()
+         callApi()
+
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_swiggy, container, false)
-    }
+    private fun callApi() {
+        val apiClient= Network.getRetrofit().create(ApiService::class.java)
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment SwiggyFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            SwiggyFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+        apiClient.getDetails().enqueue(object : Callback<ResponseDTO>{
+            override fun onResponse(call: Call<ResponseDTO>, response: Response<ResponseDTO>) {
+                restaurantDTOList = response.body()?.restaurants as List<RestaurantsDTO>
+                setTopPicksRestaurant()
             }
+
+            override fun onFailure(call: Call<ResponseDTO>, t: Throwable) {
+                TODO("Not yet implemented")
+            }
+
+        })
     }
+
+    private fun setTopPicksRestaurant() {
+        var linearLayoutManager = LinearLayoutManager(context)
+        rvTopPicks.layoutManager = linearLayoutManager
+        var topPicksAdapter = TopPicksAdapter(restaurantDTOList)
+        rvTopPicks.adapter = topPicksAdapter
+    }
+
+
+    private fun setPopularRecyclerview() {
+        var linearLayoutManager = LinearLayoutManager(context)
+        rvPopular.layoutManager = linearLayoutManager
+        var popularAdapter = PopularAdapter(list)
+        rvPopular.adapter = popularAdapter
+    }
+
+    private fun buildPopularList() {
+        TODO("Not yet implemented")
+    }
+
+    private fun buildList() {
+
+    }
+
+    private fun setRecyclerView() {
+
+
+    }
+
+
+
 }

@@ -17,11 +17,15 @@
         <entry key="..\:/SwiggyClone2/app/src/main/res/drawable/edittext_bg.xml" value="0.15462962962962962" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/drawable/searchview_background.xml" value="0.18541666666666667" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/layout/activity_home.xml" value="0.18113208199022698" />
+        <entry key="..\:/SwiggyClone2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/layout/activity_number.xml" value="0.18113208199022698" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/layout/activity_verify.xml" value="0.16301887379120425" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/layout/activity_verifyenterotptwo.xml" value="0.2988679352838745" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/layout/fragment_account.xml" value="0.1" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/layout/fragment_search.xml" value="0.16301887379120425" />
+        <entry key="..\:/SwiggyClone2/app/src/main/res/layout/fragment_swiggy.xml" value="0.19924529018924966" />
+        <entry key="..\:/SwiggyClone2/app/src/main/res/layout/popular_itemview.xml" value="0.1358490614926702" />
+        <entry key="..\:/SwiggyClone2/app/src/main/res/layout/top_picks_itemview.xml" value="0.1" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/fragment_account.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/fragment_cart.xml" value="0.25416666666666665" />
