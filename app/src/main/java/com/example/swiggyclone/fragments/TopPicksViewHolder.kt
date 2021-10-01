@@ -14,8 +14,7 @@ class TopPicksViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
             tvTopPickName.text = restaurantsDTO.name
             Log.e("TAG",restaurantsDTO.photograph.toString())
 
-            Glide.with(ivTopPickImage).load(restaurantsDTO.photograph)
-                .placeholder(R.drawable.res6).into(ivTopPickImage)
+            Glide.with(ivTopPickImage).load(restaurantsDTO.photograph).into(ivTopPickImage)
         }
     }
 }

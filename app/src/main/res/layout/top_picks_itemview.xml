@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="8dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp">
 
         <ImageView
             android:id="@+id/ivTopPickImage"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable/cake"
             android:scaleType="fitXY"
-            android:layout_marginLeft="8dp"
-            />
+            android:src="@drawable/cake" />
 
-        <TextView
-            android:id="@+id/tvTopPickName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="demo text"
-            android:layout_gravity="center"
-            android:textSize="10dp"
-            android:textColor="@color/black"/>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTopPickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="demo text"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="9dp" />
+
 
 </LinearLayout>

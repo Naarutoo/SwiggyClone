@@ -1,140 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragments.SwiggyFragment">
+    tools:context=".fragments.SwiggyFragment"
+    android:layout_margin="7dp">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/ivRestaurant"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_margin="20dp"
-        android:src="@drawable/res"
-        android:scaleType="fitCenter"
-        />
-    <TextView
-        android:id="@+id/tvRes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Restaurant"
-        android:textStyle="bold"
-        android:layout_marginLeft="40dp"
-        app:layout_constraintTop_toBottomOf="@id/ivRestaurant"
-        app:layout_constraintLeft_toLeftOf="parent"/>
-
-    <ImageView
-        android:id="@+id/ivGenie"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/ivRestaurant"
-        android:layout_margin="20dp"
-        android:src="@drawable/geniesw"
-        android:scaleType="fitCenter"/>
-
-    <TextView
-        android:id="@+id/tvGenie"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Genie"
-        android:textStyle="bold"
-        android:layout_marginLeft="70dp"
-        app:layout_constraintTop_toBottomOf="@id/ivRestaurant"
-        app:layout_constraintLeft_toRightOf="@id/tvRes"/>
-    <ImageView
-        android:id="@+id/ivSuper"
-        android:layout_width="100dp"
-        android:layout_height="120dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/ivGenie"
-        android:layout_margin="20dp"
-        android:src="@drawable/swiggysup"
-        android:scaleType="fitCenter"
-       />
-
-    <TextView
-        android:id="@+id/tvSuper"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Super"
-        android:textStyle="bold"
-        android:layout_marginLeft="80dp"
-        app:layout_constraintTop_toBottomOf="@id/ivRestaurant"
-        app:layout_constraintLeft_toRightOf="@id/tvGenie"/>
-
-    <ImageView
-        android:id="@+id/ivOffer"
-      android:layout_marginVertical="20dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="5dp"
-        android:paddingTop="30dp"
-        app:layout_constraintTop_toBottomOf="@+id/tvRes"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="30dp"
-        android:src="@drawable/grab"
-        android:scaleType="fitXY"
-        android:adjustViewBounds="true"
-        app:shapeAppearanceOverlay="@style/roundimageview"
-        />
+        android:layout_height="match_parent">
 
-    <TextView
-    android:id="@+id/tvTopPicks"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toBottomOf="@id/ivOffer"
-    app:layout_constraintLeft_toLeftOf="parent"
-    android:text=" Top Picks For You"
-    android:layout_marginTop="25dp"
-    android:layout_marginLeft="20dp"
-    android:textStyle="bold"
-    android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/clipArt"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/swiggy_splash" />
 
-    <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/rvTopPicks"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTopPicks" />
-    <TextView
-        android:id="@+id/tvPopularBrands"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Popular Brands"
-       android:layout_marginTop="25dp"
-        android:layout_marginLeft="20dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rvTopPicks"/>
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/clipArt"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="Get Free Delivery And But 1 Get 1, "
+            android:textSize="12sp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvPopular"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvPopularBrands" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintStart_toEndOf="@id/text1"
+            android:text="Buy SUPER Now"
+            android:textColor="#F44336"
+            android:textSize="12sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollVTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivRestaurant"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvRes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Restaurant"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardView1" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintLeft_toRightOf="@id/cardView1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivGenie"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image2"
+                        app:layout_constraintLeft_toRightOf="@id/cardView1"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvGenie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="Genie"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/tvRes"
+                    app:layout_constraintTop_toBottomOf="@id/cardView2" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView3"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintLeft_toRightOf="@id/cardView2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivMeatStore"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image3"
+                        app:layout_constraintLeft_toRightOf="@id/cardView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvMeatStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="Meat Store"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/tvGenie"
+                    app:layout_constraintTop_toBottomOf="@id/cardView3" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView4"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintLeft_toRightOf="@id/cardView3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/ivSuper"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/image4"
+                        app:layout_constraintLeft_toRightOf="@id/cardView3"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvSuper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="Super"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/tvMeatStore"
+                    app:layout_constraintTop_toBottomOf="@id/cardView4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView5"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollVTop"
+            app:shapeAppearanceOverlay="@style/roundimageview">
+
+            <ImageView
+                android:id="@+id/ivOffer"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/grab"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvRes"
+                app:shapeAppearanceOverlay="@style/roundimageview" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tvTopPicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text=" Top Picks For You"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView5" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTopPicks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTopPicks" />
+
+        <TextView
+            android:id="@+id/tvPopularBrands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="25dp"
+            android:text="Popular Brands"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rvTopPicks" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPopular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPopularBrands" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

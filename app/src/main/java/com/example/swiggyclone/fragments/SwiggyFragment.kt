@@ -73,10 +73,10 @@ class SwiggyFragment : Fragment() {
         list.add(PopularModel(R.drawable.kfc,"KFC"))
         list.add(PopularModel(R.drawable.subway,"Subway"))
         list.add(PopularModel(R.drawable.pizzahut,"Pizza Hut"))
-        list.add(PopularModel(R.drawable.burger_king,"Burger King"))
-        list.add(PopularModel(R.drawable.starbucks,"Starbucks"))
+        //list.add(PopularModel(R.drawable.burger_king,"Burger King"))
+        //list.add(PopularModel(R.drawable.starbucks,"Starbucks"))
         list.add(PopularModel(R.drawable.dominoz,"Dominoz"))
-        list.add(PopularModel(R.drawable.rohit,"Rohit wadewale"))
+       // list.add(PopularModel(R.drawable.rohit,"Rohit wadewale"))
 
     }
 
