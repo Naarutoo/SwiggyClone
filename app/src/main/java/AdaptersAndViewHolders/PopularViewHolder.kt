@@ -1,5 +1,6 @@
-package com.example.swiggyclone.fragments
+package AdaptersAndViewHolders
 
+import Model.PopularModel
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.popular_itemview.view.*

@@ -1,4 +1,4 @@
-package com.example.swiggyclone.fragments
+package Model
 
 class PopularModel(image:Int,name:String) {
     var image = image

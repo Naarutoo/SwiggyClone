@@ -4,6 +4,7 @@ import java.io.Serializable
 
 data class RestaurantsDTO(
 	val id: Int? = null,
+	val menu01: Menu01DTO? = null,
 	val name: String? = null,
 	val neighborhood: String? = null,
 	val photograph: String? = null,

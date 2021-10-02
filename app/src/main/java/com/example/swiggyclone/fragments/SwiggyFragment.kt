@@ -1,14 +1,20 @@
 package com.example.swiggyclone.fragments
 
+import AdaptersAndViewHolders.PopularAdapter
+import AdaptersAndViewHolders.TopPicksAdapter
+import Model.PopularModel
 import Model.ResponseDTO
 import Model.RestaurantsDTO
 import Retrofit.ApiService
 import Retrofit.Network
+import activities.RestaurantDetailsActivity
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.swiggyclone.R
 import kotlinx.android.synthetic.main.fragment_swiggy.*
@@ -16,7 +22,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class SwiggyFragment : Fragment() {
+class SwiggyFragment : Fragment() ,ItemClickListener {
     private var list: ArrayList<PopularModel> = ArrayList()
     private var restaurantDTOList=listOf<RestaurantsDTO>()
 
@@ -24,7 +30,7 @@ class SwiggyFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         buildPopularList()
         setPopularRecyclerview()
-         callApi()
+        callApi()
 
     }
 
@@ -56,7 +62,7 @@ class SwiggyFragment : Fragment() {
         var linearLayoutManager = LinearLayoutManager(context)
         linearLayoutManager.orientation = LinearLayoutManager.HORIZONTAL
         rvTopPicks.layoutManager = linearLayoutManager
-        var topPicksAdapter = TopPicksAdapter(restaurantDTOList)
+        var topPicksAdapter = TopPicksAdapter(restaurantDTOList, this)
         rvTopPicks.adapter = topPicksAdapter
     }
 
@@ -76,19 +82,13 @@ class SwiggyFragment : Fragment() {
         //list.add(PopularModel(R.drawable.burger_king,"Burger King"))
         //list.add(PopularModel(R.drawable.starbucks,"Starbucks"))
         list.add(PopularModel(R.drawable.dominoz,"Dominoz"))
-       // list.add(PopularModel(R.drawable.rohit,"Rohit wadewale"))
+        // list.add(PopularModel(R.drawable.rohit,"Rohit wadewale"))
 
     }
 
-    private fun buildList() {
-
+    override fun onImageClicked(restaurantsDTO: RestaurantsDTO, position: Int) {
+        Toast.makeText(context,"dfskfjslkjfkfjdksf",Toast.LENGTH_SHORT).show()
+        val intent = Intent(requireContext(), RestaurantDetailsActivity::class.java)
+        startActivity(intent)
     }
-
-    private fun setRecyclerView() {
-
-
-    }
-
-
-
 }
