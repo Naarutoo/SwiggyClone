@@ -7,7 +7,7 @@ import com.example.swiggyclone.R
 import com.example.swiggyclone.fragments.ItemClickListener
 
 
-class TopPicksAdapter(private val responseList: List<RestaurantsDTO>,var itemClickListener: ItemClickListener) : RecyclerView.Adapter<TopPicksViewHolder>() {
+class TopPicksAdapter(private val responseList: List<RestaurantsDTO>, var itemClickListener: ItemClickListener) : RecyclerView.Adapter<TopPicksViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopPicksViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.top_picks_itemview,parent,false);

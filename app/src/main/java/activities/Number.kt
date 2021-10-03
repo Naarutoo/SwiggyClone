@@ -67,6 +67,7 @@ class Number : AppCompatActivity() {
                 var intent = Intent(applicationContext,Verify::class.java)
                 intent.putExtra("storedVerificationId",storedVerificationId)
                 startActivity(intent)
+                finish()
             }
         }
 

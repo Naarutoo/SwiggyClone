@@ -12,32 +12,29 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Restaurant Name"
+        android:text="Mission Chinese Food"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="24dp"
-        android:layout_margin="15dp"
-        />
+        android:layout_margin="15dp" />
     <TextView
         android:id="@+id/tvFoodType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvRestaurantName"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="food Type"
+        android:text="Multi Cuisine"
         android:textSize="15dp"
-        android:layout_margin="10dp"
-        />
+        android:layout_margin="15dp" />
     <TextView
         android:id="@+id/tvLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/tvFoodType"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Location"
+        android:text="65, Karolbagh, Old Delhi - 110006"
         android:textSize="15dp"
-        android:layout_marginLeft="10dp"
-        />
+        android:layout_marginLeft="15dp" />
     <View
         android:id="@+id/view1"
         android:layout_width="match_parent"

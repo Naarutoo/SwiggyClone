@@ -26,14 +26,16 @@
         <entry key="..\:/SwiggyClone2/app/src/main/res/layout/fragment_swiggy.xml" value="0.19924529018924966" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/layout/popular_itemview.xml" value="0.1358490614926702" />
         <entry key="..\:/SwiggyClone2/app/src/main/res/layout/top_picks_itemview.xml" value="0.1" />
+        <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/drawable/swiggy.xml" value="0.2703125" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/activity_restaurant_details.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/activity_restaurant_details.xml" value="0.264" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/fragment_account.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/fragment_cart.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/fragment_swiggy.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/menu_item_layout.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/popular_itemview.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/layout/top_picks_itemview.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Dougles/StudioProjects/SwiggyClone/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

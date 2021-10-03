@@ -14,10 +14,7 @@ import kotlinx.android.synthetic.main.fragment_account.*
 
 class AccountFragment : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         return inflater.inflate(R.layout.fragment_account, container, false)
 
@@ -29,7 +26,6 @@ class AccountFragment : Fragment() {
         btnLogin.setOnClickListener {
             var intent = Intent(this.context, Number::class.java)
             startActivity(intent)
-
         }
 
     }
